@@ -1,0 +1,99 @@
+@media (max-width: 1150px) {
+  .seo-services-wrap__text h2 {
+    font-size: 45px;
+  }
+  .seo-services-wrap__img-wrap {
+    padding-right: 0;
+  }
+  .advertising-services-wrap__text h2 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 991px) {
+  .cards-description-services {
+    grid-template-columns: 1fr 1fr;
+  }
+  .advertising-services-wrap {
+    width: 100%;
+    padding: 70px 0;
+  }
+  .advertising-services-wrap__img-wrap {
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .seo-services-wrap {
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+  }
+  .seo-services-wrap__text {
+    width: 100%;
+  }
+  .seo-services-wrap__text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .seo-services-wrap__text .text-description {
+    margin-bottom: 15px;
+  }
+  .seo-services-wrap__img-wrap {
+    width: 55%;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+  .cards-description-services {
+    grid-template-columns: 1fr;
+  }
+  .cards-description-services--desktop {
+    display: none;
+  }
+  .cards-description-services--mobile {
+    display: block;
+  }
+  .cards-description-services--margin-bottom {
+    margin-bottom: 30px;
+  }
+  .cards-description-services__row {
+    padding: 25px 40px 25px 25px;
+  }
+  .cards-description-services__row .img-wrap {
+    width: 110px;
+    height: 80px;
+  }
+  .cards-description-services__row h3 {
+    font-size: 17px;
+    line-height: 130%;
+  }
+  .advertising-services-wrap {
+    flex-direction: column;
+    padding: 50px 0 30px;
+  }
+  .advertising-services-wrap__text {
+    width: 100%;
+  }
+  .advertising-services-wrap__text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .advertising-services-wrap__text h2 br {
+    display: block;
+  }
+  .advertising-services-wrap__img-wrap {
+    width: 55%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .advertising-services-wrap__img-wrap {
+    width: 80%;
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .seo-services-wrap__img-wrap {
+    width: 80%;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}

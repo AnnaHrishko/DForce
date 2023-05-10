@@ -1,0 +1,195 @@
+@media (max-width: 1250px){
+
+.complex-services-section{
+	&__cards {
+	  grid-template-columns: 1fr 1fr;
+	  grid-column-gap: 50px;
+	  row-gap: 50px;
+	  margin-bottom: 70px;
+	}
+}
+}
+
+@media (max-width: 991px){
+
+.projects-section {
+  padding: 60px 0 62px;
+}
+
+.complex-services-section{
+	&__individual-srvcs{
+		width: 90%;
+	}
+}
+
+.projects-section__inner{
+	grid-gap: 35px;
+	&__card{
+		.img-wrap {
+		  	height: 300px;
+		}
+		.description-card{
+			p{
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+.gives-education-section {
+  padding: 38px 30px;
+  p{
+  	font-size: 40px;
+  }
+}
+
+.build-community-section__result-works {
+  width: 90%;
+  &__row{
+  	padding: 0 15px;
+  	.text-description{
+  		font-size: 15px;
+  	}
+  }
+}
+
+.icons-wrap{
+	top: unset;
+	bottom: 8px;
+}
+}
+
+@media (max-width: 768px){
+
+.icons-wrap{
+	.ukraine-icon{
+		width: 30px;
+		height: 30px;
+		margin-right: 7px;
+	}
+	.support-icon{
+		width: 22px;
+		height: 22px;
+	}
+}
+
+.build-community-section__wrap{
+	padding: 30px 0 60px;
+	.main-heading {
+	  	margin-bottom: 15px;
+	}
+} 
+
+.build-community-section__result-works {
+  width: 100%;
+  padding: 25px 0 30px;
+  grid-column-gap: 20px;
+  &__row{
+  	border-right: unset;
+  	padding: unset;
+  	&__name-results{
+  		font-size: 45px;
+  		span{
+  			font-size: 15px;
+  		}
+  	}
+  	.text-description{
+  		font-size: 12px;
+  		line-height: 16px;
+  	}
+  }
+}
+
+.complex-services-section__cards {
+  grid-template-columns: 1fr;
+  grid-column-gap: unset;
+  row-gap: 60px;
+  margin-bottom: 50px;
+  &__col{
+  	.heading{
+  		margin-bottom: 10px;
+  	}
+  	&__img{
+  		width: 176px;
+		height: 176px;
+		margin-bottom: 20px;
+  	}
+  }
+}
+
+.complex-services-section {
+  padding-top: 53px;
+}
+
+.complex-services-section__individual-srvcs {
+  padding: 30px 35px;
+  width: 100%;
+  flex-direction: column;
+  margin: 0 auto -80px;
+  p{
+  	margin-bottom: 20px;
+  	text-align: center;
+  }
+}
+
+.projects-section {
+  	padding: 130px 0 40px;
+  	&--padding-top {
+	  padding-top: 55px;
+	}
+  	.heading {
+	  	margin-bottom: 30px;
+	}
+	&__inner{
+		width: calc(100% + 30px);
+		margin-left: -15px;
+		grid-template-columns: 1fr;
+		margin-bottom: 35px;
+		grid-gap: 40px;
+		&__card{
+			.img-wrap {
+			  	height: 230px;
+			}
+			.description-card {
+			  	padding: 20px 14px 0;
+			  	.category-tag {
+				  	font-size: 11px;
+				  	margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+.gives-education-section{
+	padding: 38px 15px;
+	p {
+	  	font-size: 26px;
+	}
+} 
+}
+
+@media (max-width: 500px){
+
+.build-community-section__result-works {
+  display: flex;
+  width: calc(100% + 15px);
+  margin-left: -15px;
+  grid-column-gap: unset;
+  &__row{
+  	width: calc(33.3% - 15px);
+  	margin-left: 15px;
+  	justify-content: space-between;
+  	&__name-results{
+  		margin-bottom: 5px;
+  		font-size: 30px;
+  		span{
+  			font-size: 10px;
+  		}
+  	}
+  	.text-description br{
+  		display: block;
+  	}
+  }
+}
+}

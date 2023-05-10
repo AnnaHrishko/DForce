@@ -1,0 +1,211 @@
+
+
+.build-community-wrap{
+	padding: 20px 0 56px;
+	.main-heading{
+		margin-bottom: 37px;
+	}
+}
+
+.bv-video{
+	height: auto!important;
+}
+
+.bv-video-wrap{
+	height: inherit!important;
+}
+
+.build-community-section{
+	&__wrap{
+		position: relative;
+		padding: 20px 0 56px;
+		.main-heading{
+			margin-bottom: 37px;
+		}
+	}
+	&__img{
+		width: 100%;
+		height: 300px;
+		// padding-bottom: 50px;
+  //   	padding-top: 50px; 
+    	// position: relative;
+		// z-index: 1;
+		padding: 200px 0px;
+  overflow: hidden;
+  position: relative;
+		video{
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+			// min-width: 100%;
+		 //    position: fixed;
+		 //    top:55vh;
+		 //    z-index: -999;
+		 position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -9999;
+
+		}
+	}
+	&__result-works{
+		width: 70%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		padding: 46px 0 48px;
+		&__row{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border-right: 1px solid #E0DFDF;
+			&:last-of-type{
+				border-right: none;
+			}
+			&__name-results{
+				font-weight: 400;
+				font-size: 80px;
+				line-height: 110%;
+				letter-spacing: -0.05em;
+				color: #101828;
+				span{
+					font-size: 22px;
+					line-height: 30px;
+					letter-spacing: -0.01em;
+					text-transform: uppercase;
+					color: #101828;
+					margin-left: 5px;
+				}
+			}
+			.text-description{
+				& br{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.partners-wraper{
+	background-color: #101828;
+	padding: 19px 0;
+	&__inner{
+		display: flex;
+		align-items: center;
+		overflow-x: scroll;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+		&::-webkit-scrollbar { 
+		    display: none; 
+		}  
+		&__logo{
+			margin-right: 50px;
+			&:last-of-type{
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.undp_logo{
+	max-width: 103px;
+	max-height: 51px;
+}
+
+.meest_logo{
+	max-width: 142px;
+	max-height: 36px;
+}
+
+.partners_logo2{
+	max-width: 128px;
+	max-height: 42px;
+}
+
+.ukr_kongress{
+	max-width: 82px;
+	max-height: 82px;
+}
+
+.unite_with_ukr{
+	max-width: 157px;
+	max-height: 43px;
+}
+
+.institute_logo{
+	max-width: 250px;
+	max-height: 60px;
+}
+
+.osce_logo{
+	max-width: 131px;
+	max-height: 37px;
+}
+
+.complex-services-section{
+	padding-top: 82px;
+	&__cards{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 100px;
+		margin-bottom: 70px;
+		&__col{
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			&__img{
+				width: 230px;
+				height: 230px;
+				margin-bottom: 30px;
+				img{
+					width: 100%;
+				}
+			}
+			.heading{
+				margin-bottom: 13px;
+			}
+			.text-description{
+				margin-bottom: 20px;
+			}
+		}
+	}
+	&__individual-srvcs{
+		background: #F8F9FB;
+		border: 2px dashed #444CE7;
+		border-radius: 14px;
+		padding: 14px 14px 14px 30px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 70%;
+		margin: 0 auto -30px;
+		position: relative;
+		z-index: 2;
+		p{
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 110%;
+			letter-spacing: -0.02em;
+			color: #101828;
+		}
+	}
+}
+
+.icons-wrap{
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 25px;
+	.ukraine-icon{
+		width: 46px;
+		height: 46px;
+		margin-right: 11px;
+	}
+	.support-icon{
+		width: 33px;
+		height: 34px;
+	}
+}
+

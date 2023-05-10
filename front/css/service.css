@@ -1,0 +1,110 @@
+.seo-services-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.seo-services-wrap__text {
+  width: 60%;
+}
+.seo-services-wrap__text h2 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: #101828;
+  margin-bottom: 20px;
+}
+.seo-services-wrap__text .text-description {
+  margin-bottom: 20px;
+}
+.seo-services-wrap__img-wrap {
+  width: calc(40% - 60px);
+  margin-left: 60px;
+  padding-right: 50px;
+}
+.seo-services-wrap__img-wrap img {
+  width: 100%;
+}
+
+.cards-description-services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.cards-description-services--margin-bottom {
+  margin-bottom: 80px;
+}
+.cards-description-services--mobile {
+  display: none;
+}
+.cards-description-services__row {
+  background: #FFFFFF;
+  padding: 54px 56px 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards-description-services__row .img-wrap {
+  width: 138px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+.cards-description-services__row .img-wrap img {
+  width: 100%;
+}
+.cards-description-services__row h3 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #101828;
+}
+
+.advertising-services-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 110px 0;
+}
+.advertising-services-wrap__img-wrap {
+  width: calc(50% - 90px);
+  margin-right: 90px;
+  padding-left: 50px;
+}
+.advertising-services-wrap__img-wrap img {
+  width: 100%;
+}
+.advertising-services-wrap__text {
+  width: 50%;
+}
+.advertising-services-wrap__text h2 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: #101828;
+  margin-bottom: 24px;
+}
+.advertising-services-wrap__text h2 br {
+  display: none;
+}
+.advertising-services-wrap__text .text-description {
+  margin-bottom: 20px;
+}
+
+.swiper-wrapper {
+  padding-bottom: 40px;
+}
+
+.swiper-pagination-bullet {
+  background: #FFFFFF !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #7B47D8 !important;
+}
