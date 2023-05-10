@@ -24,8 +24,9 @@
   margin-left: 60px;
   padding-right: 50px;
 }
-.seo-services-wrap__img-wrap img {
+.seo-services-wrap__img-wrap video {
   width: 100%;
+  height: 100%;
 }
 
 .cards-description-services {
@@ -75,8 +76,9 @@
   margin-right: 90px;
   padding-left: 50px;
 }
-.advertising-services-wrap__img-wrap img {
+.advertising-services-wrap__img-wrap video {
   width: 100%;
+  height: 100%;
 }
 .advertising-services-wrap__text {
   width: 50%;

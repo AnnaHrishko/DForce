@@ -150,14 +150,14 @@ $(function() {
         messages: {
             "email": {
                 required: "Введіть вашу електронну адресу",
-                emailRegex: "Формат електронної пошти невірний"
+                emailRegex: "Формат електронної пошти невірний",
             },
         },
     });
 });
 
 
-    const backgroundVideo = new BackgroundVideo('.bv-video', {
+     const backgroundVideo = new BackgroundVideo('.bv-video', {
       src: [
         '../video/Untitled.mp4',
       ],
@@ -165,7 +165,7 @@ $(function() {
         // Use onReady() to prevent flickers or force loading state
         const vidParent = document.querySelector(`.${this.bvVideoWrapClass}`);
         vidParent.classList.add('bv-video-wrap--ready');
-        autoplayFallback: true,
-      }
+        autoplayFallback: true;
+      },
 
     });
