@@ -159,7 +159,7 @@ $(function() {
 
      const backgroundVideo = new BackgroundVideo('.bv-video', {
       src: [
-        '../video/Untitled.mp4',
+        '../video/Gradientsoftbodies.mp4',
       ],
       onReady: function () {
         // Use onReady() to prevent flickers or force loading state
@@ -169,3 +169,4 @@ $(function() {
       },
 
     });
+

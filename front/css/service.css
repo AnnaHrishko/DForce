@@ -43,9 +43,6 @@
 .cards-description-services__row {
   background: #FFFFFF;
   padding: 54px 56px 40px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .cards-description-services__row .img-wrap {
   width: 138px;
@@ -61,6 +58,9 @@
   line-height: 150%;
   letter-spacing: -0.02em;
   color: #101828;
+}
+.cards-description-services__row .text-description {
+  margin-top: 10px;
 }
 
 .advertising-services-wrap {

@@ -1,0 +1,21 @@
+.projects-page.projects-section{
+	padding: 22px 0 62px;
+	@media (max-width: 768px){
+		padding: 70px 0 40px;
+	}
+	.heading{
+		margin-bottom: 20px;
+	}
+	.text-description{
+		margin-bottom: 60px;
+		@media (max-width: 768px){
+			margin-bottom: 40px;
+		}
+	}
+	.btn-allprojects{
+		display: none;
+		@media (max-width: 768px){
+			display: flex;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.projects-page.projects-section {
+  padding: 22px 0 62px;
+}
+@media (max-width: 768px) {
+  .projects-page.projects-section {
+    padding: 70px 0 40px;
+  }
+}
+.projects-page.projects-section .heading {
+  margin-bottom: 20px;
+}
+.projects-page.projects-section .text-description {
+  margin-bottom: 60px;
+}
+@media (max-width: 768px) {
+  .projects-page.projects-section .text-description {
+    margin-bottom: 40px;
+  }
+}
+.projects-page.projects-section .btn-allprojects {
+  display: none;
+}
+@media (max-width: 768px) {
+  .projects-page.projects-section .btn-allprojects {
+    display: flex;
+  }
+}

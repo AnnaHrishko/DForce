@@ -13,15 +13,6 @@
   .complex-services-section__individual-srvcs {
     width: 90%;
   }
-  .projects-section__inner {
-    grid-gap: 35px;
-  }
-  .projects-section__inner__card .img-wrap {
-    height: 300px;
-  }
-  .projects-section__inner__card .description-card p {
-    font-size: 20px;
-  }
   .gives-education-section {
     padding: 38px 30px;
   }

@@ -1,3 +1,5 @@
+
+
 @media (max-width: 1255px){
 
 .social-media a {
@@ -205,6 +207,32 @@ header{
 		&__logo{
 			margin-right: 30px;
 		}
+	}
+}
+
+.projects-section__inner{
+	grid-gap: 35px;
+	.project-card:nth-child(even){
+		margin-top: 0;
+	}
+	.project-card{
+		&__img{
+			height: 300px;
+		}
+		&__description-card{
+			p{
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+.gives-education-section{
+	&__video{
+		display: none;
+	}
+	&__video-mobile{
+		display: block;
 	}
 }
 }

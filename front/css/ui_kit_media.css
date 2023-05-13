@@ -179,6 +179,24 @@
   .partners-wraper__inner__logo {
     margin-right: 30px;
   }
+  .projects-section__inner {
+    grid-gap: 35px;
+  }
+  .projects-section__inner .project-card:nth-child(even) {
+    margin-top: 0;
+  }
+  .projects-section__inner .project-card__img {
+    height: 300px;
+  }
+  .projects-section__inner .project-card__description-card p {
+    font-size: 20px;
+  }
+  .gives-education-section__video {
+    display: none;
+  }
+  .gives-education-section__video-mobile {
+    display: block;
+  }
 }
 @media (max-width: 500px) {
   header.active .header-inner .mobile-part .social-media a {

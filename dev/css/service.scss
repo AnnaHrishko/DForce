@@ -42,9 +42,9 @@
 	&__row{
 		background: #FFFFFF;
 		padding: 54px 56px 40px 40px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: space-between;
 		.img-wrap{
 			width: 138px;
 			height: 100px;
@@ -59,6 +59,9 @@
 			line-height: 150%;
 			letter-spacing: -0.02em;
 			color: #101828;
+		}
+		.text-description{
+			margin-top: 10px;
 		}
 	}
 }
