@@ -1,9 +1,19 @@
+@media (max-width: 1310px) {
+  .complex-services-section__cards__col .heading {
+    font-size: 47px;
+  }
+}
 @media (max-width: 1250px) {
   .complex-services-section__cards {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 50px;
     row-gap: 50px;
     margin-bottom: 70px;
+  }
+}
+@media (max-width: 1150px) {
+  .partners-wraper__inner {
+    justify-content: unset;
   }
 }
 @media (max-width: 991px) {
@@ -19,6 +29,10 @@
   .gives-education-section p {
     font-size: 40px;
   }
+  .build-community-section__wrap .main-heading {
+    width: 85%;
+    margin: 0 auto 25px;
+  }
   .build-community-section__result-works {
     width: 90%;
   }
@@ -31,9 +45,19 @@
   .icons-wrap {
     top: unset;
     bottom: 8px;
+    left: 15px;
+  }
+  .complex-services-section__cards__col .text-description {
+    width: 80%;
   }
 }
 @media (max-width: 768px) {
+  .complex-services-section__cards__col .heading {
+    font-size: 32px;
+  }
+  .complex-services-section__cards__col .text-description {
+    width: 45%;
+  }
   .icons-wrap .ukraine-icon {
     width: 30px;
     height: 30px;
@@ -45,9 +69,21 @@
   }
   .build-community-section__wrap {
     padding: 30px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .build-community-section__wrap .main-heading {
     margin-bottom: 15px;
+  }
+  .build-community-section__wrap .text-description {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .build-community-section__wrap .btn {
+    display: inline-block;
+    margin-bottom: 55px;
   }
   .build-community-section__result-works {
     width: 100%;
@@ -127,6 +163,34 @@
   .gives-education-section p {
     font-size: 26px;
   }
+  .undp_logo {
+    max-width: 80px;
+    max-height: 30px;
+  }
+  .meest_logo {
+    max-width: 100px;
+    max-height: 30px;
+  }
+  .partners_logo2 {
+    max-width: 100px;
+    max-height: 30px;
+  }
+  .ukr_kongress {
+    max-width: 50px;
+    max-height: 50px;
+  }
+  .unite_with_ukr {
+    max-width: 100px;
+    max-height: 30px;
+  }
+  .institute_logo {
+    max-width: 200px;
+    max-height: 30px;
+  }
+  .osce_logo {
+    max-width: 100px;
+    max-height: 30px;
+  }
 }
 @media (max-width: 500px) {
   .build-community-section__result-works {
@@ -142,12 +206,27 @@
   }
   .build-community-section__result-works__row__name-results {
     margin-bottom: 5px;
-    font-size: 30px;
   }
   .build-community-section__result-works__row__name-results span {
     font-size: 10px;
   }
   .build-community-section__result-works__row .text-description br {
     display: block;
+  }
+  .complex-services-section__cards__col .text-description {
+    width: 65%;
+  }
+}
+@media (max-width: 400px) {
+  .build-community-section__wrap .text-description {
+    width: 75%;
+  }
+  .build-community-section__wrap .main-heading {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 13px;
+  }
+  .complex-services-section__cards__col .text-description {
+    width: 85%;
   }
 }

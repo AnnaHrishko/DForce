@@ -27,6 +27,9 @@
 .seo-services-wrap__img-wrap video {
   width: 100%;
   height: 100%;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 
 .cards-description-services {
@@ -45,8 +48,8 @@
   padding: 54px 56px 40px 40px;
 }
 .cards-description-services__row .img-wrap {
-  width: 138px;
-  height: 100px;
+  width: 104px;
+  height: 104px;
   margin-bottom: 20px;
 }
 .cards-description-services__row .img-wrap img {
@@ -69,7 +72,7 @@
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-  padding: 110px 0;
+  padding: 50px 0;
 }
 .advertising-services-wrap__img-wrap {
   width: calc(50% - 90px);
@@ -79,6 +82,9 @@
 .advertising-services-wrap__img-wrap video {
   width: 100%;
   height: 100%;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
 }
 .advertising-services-wrap__text {
   width: 50%;

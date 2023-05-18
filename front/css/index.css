@@ -22,7 +22,10 @@
   padding: 20px 0 56px;
 }
 .build-community-section__wrap .main-heading {
-  margin-bottom: 37px;
+  margin-bottom: 25px;
+}
+.build-community-section__wrap .btn {
+  display: none;
 }
 .build-community-section__img {
   width: 100%;
@@ -59,6 +62,7 @@
   border-right: none;
 }
 .build-community-section__result-works__row__name-results {
+  font-family: "Barlow";
   font-weight: 400;
   font-size: 80px;
   line-height: 110%;
@@ -87,6 +91,7 @@
   overflow-x: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  justify-content: center;
 }
 .partners-wraper__inner::-webkit-scrollbar {
   display: none;
@@ -99,38 +104,38 @@
 }
 
 .undp_logo {
-  max-width: 103px;
-  max-height: 51px;
+  max-width: 80px;
+  max-height: 40px;
 }
 
 .meest_logo {
-  max-width: 142px;
-  max-height: 36px;
+  max-width: 120px;
+  max-height: 40px;
 }
 
 .partners_logo2 {
-  max-width: 128px;
-  max-height: 42px;
+  max-width: 120px;
+  max-height: 40px;
 }
 
 .ukr_kongress {
-  max-width: 82px;
-  max-height: 82px;
-}
-
-.unite_with_ukr {
-  max-width: 157px;
-  max-height: 43px;
-}
-
-.institute_logo {
-  max-width: 250px;
+  max-width: 60px;
   max-height: 60px;
 }
 
+.unite_with_ukr {
+  max-width: 120px;
+  max-height: 40px;
+}
+
+.institute_logo {
+  max-width: 220px;
+  max-height: 40px;
+}
+
 .osce_logo {
-  max-width: 131px;
-  max-height: 37px;
+  max-width: 120px;
+  max-height: 40px;
 }
 
 .complex-services-section {
