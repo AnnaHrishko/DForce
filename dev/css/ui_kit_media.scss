@@ -90,7 +90,7 @@ header.fixed{
   	width: 100%;
   	.btn{
   		order: 1;
-  		margin-bottom: 50px;
+  		margin-bottom: 10px;
   		width: 100%;
   	}
   	.info-wrap{
@@ -257,6 +257,9 @@ header{
 
 .form-footer {
 	&__right{
+		.info-wrap{
+			margin-top: 40px;
+		}
 		.btn{
 			padding: 14px 21px 16px;
 			svg{

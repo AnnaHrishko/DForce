@@ -457,6 +457,7 @@ footer {
   margin-bottom: 65px;
 }
 .form-footer__right {
+  position: relative;
   width: 30%;
   display: flex;
   flex-direction: column;

@@ -60,7 +60,7 @@
   }
   .form-footer__right .btn {
     order: 1;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     width: 100%;
   }
   .form-footer__right .info-wrap {
@@ -205,6 +205,9 @@
   }
 }
 @media (max-width: 768px) {
+  .form-footer__right .info-wrap {
+    margin-top: 40px;
+  }
   .form-footer__right .btn {
     padding: 14px 21px 16px;
   }
