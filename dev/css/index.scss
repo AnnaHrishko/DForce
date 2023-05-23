@@ -20,13 +20,23 @@
 }
 
 .build-community-section{
+	position: relative;
 	&__wrap{
 		position: relative;
 		padding: 20px 0 56px;
 		.main-heading{
 			margin-bottom: 25px;
+			&.mobile{
+				display: none;
+			}
+		}
+		.text-description.mobile{
+			display: none;
 		}
 		.btn{
+			display: none;
+		}
+		.icons-wrap{
 			display: none;
 		}
 	}
@@ -202,7 +212,8 @@
 	display: flex;
 	align-items: center;
 	position: absolute;
-	top: 25px;
+	top: 0px;
+	left: 30px;
 	.ukraine-icon{
 		width: 46px;
 		height: 46px;

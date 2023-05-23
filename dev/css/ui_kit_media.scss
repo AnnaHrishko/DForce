@@ -244,6 +244,13 @@ header{
 		height: 340px;
 	}
 }
+
+.sucsess_popup {
+  margin-bottom: 40px;
+  position: relative;
+  order: 1;
+  bottom: auto;
+}
 }
 
 @media (max-width: 768px){
@@ -263,9 +270,9 @@ header{
 	}
   &__input-row{
   	input, textarea{
-			font-size: 13px;
+			font-size: 17px;
 			&::placeholder{
-				font-size: 13px;
+				font-size: 17px;
 			}
   	}
   }
@@ -317,7 +324,7 @@ header{
 	}
 	.project-card{
 		&__img{
-			height: 280px;
+			height: auto;
 		}
 		&__description-card{
 			.category-tag{
@@ -336,6 +343,9 @@ header{
 	}
 	&__video-mobile{
 		display: block;
+	}
+	p{
+		font-size: 24px;
 	}
 }
 }

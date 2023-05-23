@@ -6,7 +6,7 @@ let newSwiper = new Swiper('.slider-cards-js', {
             rewind: true,
             autoplay: true,
             slidesPerView: 1.2,
-            spaceBetween: 32,
+            spaceBetween: 10,
             pagination: {
               el: ".swiper-pagination",
               clickable: true,
@@ -55,6 +55,34 @@ $(function() {
     });
 });
 
+ $(document).on('submit','.form-footer',function(){
+      if ($('.form-footer').valid()){
+          let formurl = $(this).attr('action');
+          let me = $(this);
+          
+          $.ajax({
+            type: "POST",
+            url: formurl,
+            data: $('.form-footer').serialize(),     
+            success: function (data) {
+              $('form input').removeClass('valid');
+              $('.sucsess_popup').fadeIn();
+              console.log(1)
+              setTimeout(function(){
+                 $('.sucsess_popup').fadeOut(1000);
+                 console.log(2)
+              },4000)
+              me.trigger('reset')
+            },
+            error: function(err){
+              console.log('fail');
+              return false;
+            },
+          })    
+          return false;
+      }
+    });
+
 
      const backgroundVideo = new BackgroundVideo('.bv-video', {
       src: [
@@ -72,15 +100,15 @@ $(function() {
 
 $('body').addClass('hidden')
 if($("#wrap-loading").length > 0){
-   var $body = document.body,
+  var $body = document.body,
         $wrap = document.getElementById('wrap-loading'),
-        
+        // $body = classList.add('bcg-color')
         areawidth = window.innerWidth,
         areaheight = window.innerHeight,
 
         canvassize = 500,
 
-        length = 30,
+        length = 15,
         radius = 5.6,
 
         rotatevalue = 0.035,
@@ -123,13 +151,13 @@ if($("#wrap-loading").length > 0){
             }
         ))(), 200, 1.1, 2, true),
         new THREE.MeshBasicMaterial({
-            color: 0xffffff
+            color: 0x444CE7
             // , wireframe: true
         })
     );
     group.add(mesh);
 
-    ringcover = new THREE.Mesh(new THREE.PlaneGeometry(50, 15, 1), new THREE.MeshBasicMaterial({color: 0x444CE7, opacity: 0, transparent: true}));
+    ringcover = new THREE.Mesh(new THREE.PlaneGeometry(50, 15, 1), new THREE.MeshBasicMaterial({color: 0xffffff, opacity: 0, transparent: true}));
     ringcover.position.x = length+1;
     ringcover.rotation.y = Math.PI/2;
     group.add(ringcover);
@@ -143,7 +171,7 @@ if($("#wrap-loading").length > 0){
     (function() {
         var plain, i;
         for (i = 0; i < 10; i++) {
-            plain = new THREE.Mesh(new THREE.PlaneGeometry(length*2+1, radius*3, 1), new THREE.MeshBasicMaterial({color: 0x444CE7, transparent: true, opacity: 0.13}));
+            plain = new THREE.Mesh(new THREE.PlaneGeometry(length*2+1, radius*3, 1), new THREE.MeshBasicMaterial({color: 0xffffff, transparent: true, opacity: 0.13}));
             plain.position.z = -2.5+i*0.5;
             group.add(plain);
         }
@@ -154,7 +182,7 @@ if($("#wrap-loading").length > 0){
     });
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(canvassize, canvassize);
-    renderer.setClearColor('#444CE7');
+    renderer.setClearColor('#ffffff');
 
     $wrap.appendChild(renderer.domElement);
 
@@ -205,7 +233,7 @@ if($("#wrap-loading").length > 0){
         requestAnimationFrame(animate);
     }
 
-    function easing(t,b,c,d) {if((t/=d/2)<1)return c/2*t*t+b;return c/2*((t-=2)*t*t+2)+b;} 
+    function easing(t,b,c,d) {if((t/=d/2)<1)return c/2*t*t+b;return c/2*((t-=2)*t*t+2)+b;}
 }
 
 $(window).on('load', function(){ 
