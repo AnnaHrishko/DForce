@@ -15,8 +15,10 @@
 	height: inherit!important;
 }
 
-.bg-video-mobile{
-	display: none;
+.bg-video-desktop{
+	.mobile-video{
+		display: none;
+	}
 }
 
 .build-community-section{

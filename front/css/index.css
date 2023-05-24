@@ -13,7 +13,7 @@
   height: inherit !important;
 }
 
-.bg-video-mobile {
+.bg-video-desktop .mobile-video {
   display: none;
 }
 

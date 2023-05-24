@@ -2,7 +2,7 @@
 
 .header-inner{
 	.mobile-part {
-	  width: 70%;
+	  width: 65%;
 	}
 }
 }
@@ -19,7 +19,7 @@
 
 .header-inner{
 	.mobile-part {
-	  width: 73%;
+	  width: 67%;
 	}
 }
 }
@@ -32,7 +32,7 @@
 
 .header-inner{
 	.mobile-part{
-		width: 70%;
+		width: 65%;
 	}
 }
 
@@ -56,7 +56,7 @@
 
 .header-inner{
 	.mobile-part{
-		width: 75%;
+		width: 66%;
 	}
 }
 }
@@ -177,6 +177,7 @@ header{
 		background-color: #fff;
 		.header-inner{
 			.mobile-part{
+				padding-bottom: 110px;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
@@ -250,6 +251,12 @@ header{
   position: relative;
   order: 1;
   bottom: auto;
+}
+
+body{
+	&.body-padding-top{
+		padding-top: 66px;
+	}
 }
 }
 

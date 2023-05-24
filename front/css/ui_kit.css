@@ -15,6 +15,10 @@ body.body-padding-top {
   padding-top: 112px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #wrap-loading {
   position: absolute;
   left: 0;
@@ -116,7 +120,7 @@ header.fixed .header-inner__logo {
 .header-inner .mobile-part {
   display: flex;
   align-items: center;
-  width: 65%;
+  width: 63%;
   justify-content: space-between;
 }
 

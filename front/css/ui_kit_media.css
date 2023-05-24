@@ -1,6 +1,6 @@
 @media (max-width: 1300px) {
   .header-inner .mobile-part {
-    width: 70%;
+    width: 65%;
   }
 }
 @media (max-width: 1255px) {
@@ -11,7 +11,7 @@
 }
 @media (max-width: 1200px) {
   .header-inner .mobile-part {
-    width: 73%;
+    width: 67%;
   }
 }
 @media (max-width: 1150px) {
@@ -19,7 +19,7 @@
     flex-direction: column;
   }
   .header-inner .mobile-part {
-    width: 70%;
+    width: 65%;
   }
   .project-card__img {
     height: 400px;
@@ -33,7 +33,7 @@
 }
 @media (max-width: 1050px) {
   .header-inner .mobile-part {
-    width: 75%;
+    width: 66%;
   }
 }
 @media (max-width: 991px) {
@@ -139,6 +139,7 @@
     background-color: #fff;
   }
   header.active .header-inner .mobile-part {
+    padding-bottom: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -202,6 +203,9 @@
     position: relative;
     order: 1;
     bottom: auto;
+  }
+  body.body-padding-top {
+    padding-top: 66px;
   }
 }
 @media (max-width: 768px) {

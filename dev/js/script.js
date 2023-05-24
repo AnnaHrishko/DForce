@@ -83,7 +83,8 @@ $(function() {
       }
     });
 
-
+// $(window).resize(function() {
+  // if ($(window).width() > 768) {
      const backgroundVideo = new BackgroundVideo('.bv-video', {
       src: [
         '../video/Gradientsoftbodies.mp4',
@@ -94,8 +95,9 @@ $(function() {
         vidParent.classList.add('bv-video-wrap--ready');
         autoplayFallback: true;
       },
-
     });
+  // }
+// });
 
 
 $('body').addClass('hidden')
@@ -240,3 +242,8 @@ $(window).on('load', function(){
     $('body').removeClass('hidden') 
     $('#wrap-loading').fadeOut(500)
 });
+
+$('.link_section').click(function(){
+    $('.gumb').trigger('click')
+    // $('gumb').removeClass('active')
+})

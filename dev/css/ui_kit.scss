@@ -18,6 +18,10 @@ body{
 	}
 }
 
+html{
+scroll-behavior: smooth;
+}
+
 // body {
 // 	// background: #fff; 
 // 	-webkit-user-select: none; 
@@ -130,7 +134,7 @@ header.fixed{
 	.mobile-part{
 		display: flex;
 		align-items: center;
-		width: 65%;
+		width: 63%;
 		justify-content: space-between;
 	}
 }
