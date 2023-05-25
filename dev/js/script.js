@@ -2,7 +2,7 @@
 let newSwiper = new Swiper('.slider-cards-js', {
       direction: "horizontal",
             loop: true,
-            autoHeight: true,
+            autoHeight: false,
             rewind: true,
             autoplay: true,
             slidesPerView: 1.2,

@@ -33,9 +33,10 @@ html {
   left: 0;
   top: 0;
   width: 100% !important;
-  height: 100vh !important;
+  height: calc(100vh + 110px) !important;
   outline: 1px solid #444CE7;
   z-index: 60;
+  padding-bottom: 110px;
 }
 
 * {
@@ -571,4 +572,12 @@ body.bcg-color {
   color: #fff;
   font-size: 11px;
   display: none;
+}
+
+.swiper-slide {
+  height: unset !important;
+}
+
+.swiper-wrapper {
+  align-items: stretch;
 }
