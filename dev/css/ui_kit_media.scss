@@ -349,11 +349,11 @@ body{
 
 .gives-education-section{
 	&__video{
-		display: none;
-	}
-	&__video-mobile{
 		display: block;
 	}
+	// &__video-mobile{
+	// 	display: block;
+	// }
 	p{
 		font-size: 24px;
 	}

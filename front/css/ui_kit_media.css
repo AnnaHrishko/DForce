@@ -271,9 +271,6 @@
     font-size: 20px;
   }
   .gives-education-section__video {
-    display: none;
-  }
-  .gives-education-section__video-mobile {
     display: block;
   }
   .gives-education-section p {
