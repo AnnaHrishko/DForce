@@ -84,10 +84,6 @@ header.fixed .header-inner__logo {
   height: 38px;
 }
 
-.english-version .header-inner__right-part .languages-menu {
-  margin-right: 35px;
-}
-
 .header-inner {
   padding: 30px 0;
   display: flex;
@@ -165,12 +161,6 @@ header.fixed .header-inner__logo {
 }
 .languages-menu li {
   list-style: none;
-}
-.languages-menu li.current-language {
-  position: relative;
-}
-.languages-menu li.current-language:hover .sub-menu {
-  display: block;
 }
 .languages-menu li a {
   font-weight: 400;

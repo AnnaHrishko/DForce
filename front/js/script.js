@@ -278,3 +278,4 @@ $(window).on('load', function() {
     )
     wow.init();
 });
+
