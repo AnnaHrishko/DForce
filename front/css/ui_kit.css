@@ -59,6 +59,10 @@ html {
   padding: 0 30px;
 }
 
+header.bcg-white {
+  background-color: #fff;
+}
+
 .header-wrap header {
   background-color: #fff;
 }
@@ -78,6 +82,10 @@ header.fixed .header-inner {
 header.fixed .header-inner__logo {
   width: 138px;
   height: 38px;
+}
+
+.english-version .header-inner__right-part .languages-menu {
+  margin-right: 35px;
 }
 
 .header-inner {
@@ -153,7 +161,7 @@ header.fixed .header-inner__logo {
 
 .languages-menu {
   padding-left: 0;
-  display: none;
+  display: block;
 }
 .languages-menu li {
   list-style: none;
@@ -162,7 +170,7 @@ header.fixed .header-inner__logo {
   position: relative;
 }
 .languages-menu li.current-language:hover .sub-menu {
-  display: none;
+  display: block;
 }
 .languages-menu li a {
   font-weight: 400;
@@ -213,9 +221,6 @@ header.fixed .header-inner__logo {
 }
 .btn--white {
   background-color: #fff;
-}
-.btn--white:hover {
-  background-image: linear-gradient(to left, #490281, #fff, #490281, #fff);
 }
 .btn--white span {
   color: #101828;
@@ -567,11 +572,38 @@ body.bcg-color {
 }
 
 .sucsess_popup {
-  position: absolute;
-  bottom: -20px;
-  color: #fff;
-  font-size: 11px;
   display: none;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 46px 44px 49px;
+  position: relative;
+}
+.sucsess_popup .close-popup {
+  position: absolute;
+  top: 21px;
+  right: 22px;
+  cursor: pointer;
+}
+.sucsess_popup .thank-you-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.sucsess_popup .thank-you-wrap img {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-right: 12px;
+}
+.sucsess_popup .thank-you-wrap h3 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 145%;
+  letter-spacing: -0.02em;
+  color: #F2F2F2;
+}
+.sucsess_popup .text-description {
+  color: #F2F2F2;
 }
 
 .swiper-slide {

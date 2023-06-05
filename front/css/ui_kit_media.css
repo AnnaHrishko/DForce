@@ -209,6 +209,18 @@
   }
 }
 @media (max-width: 768px) {
+  .sucsess_popup .close-popup {
+    top: 12px;
+    right: 12px;
+  }
+  .sucsess_popup .thank-you-wrap img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .sucsess_popup .thank-you-wrap h3 {
+    font-size: 26px;
+  }
   .form-footer__right .info-wrap {
     margin-top: 40px;
   }

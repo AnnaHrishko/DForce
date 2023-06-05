@@ -55,7 +55,8 @@ $(function() {
     });
 });
 
- $(document).on('submit','.form-footer',function(){
+ $(document).on('submit','.form-footer',function(e){
+    event.preventDefault()
       if ($('.form-footer').valid()){
           let formurl = $(this).attr('action');
           let me = $(this);
@@ -66,12 +67,19 @@ $(function() {
             data: $('.form-footer').serialize(),     
             success: function (data) {
               $('form input').removeClass('valid');
-              $('.sucsess_popup').fadeIn();
+             
+              $('.sucsess_popup').fadeIn(200);
+                $('.form-footer__input-row, .btn').fadeOut(200);
               console.log(1)
-              setTimeout(function(){
-                 $('.sucsess_popup').fadeOut(1000);
-                 console.log(2)
-              },4000)
+              $('.sucsess_popup .close-popup').click(function(){
+                    $('.sucsess_popup').fadeOut(200);
+                  $('.form-footer__input-row, .btn').fadeIn(200);  
+                })
+              // setTimeout(function(){
+                
+              //    // $('.sucsess_popup').fadeOut(1000);
+              //    console.log(2)
+              // },4000)
               me.trigger('reset')
             },
             error: function(err){
@@ -82,6 +90,18 @@ $(function() {
           return false;
       }
     });
+
+$('body').on('click touchstart', function () {
+const videoElement = document.querySelectorAll('video');
+if (videoElement.playing) {
+// video is already playing so do nothing
+}
+else {
+// video is not playing
+// so play video now
+videoElement.play();
+}
+});
 
 // $(window).resize(function() {
   // if ($(window).width() > 768) {
@@ -110,7 +130,7 @@ if($("#wrap-loading").length > 0){
 
         canvassize = 500,
 
-        length = 15,
+        length = 19,
         radius = 5.6,
 
         rotatevalue = 0.035,
@@ -247,3 +267,14 @@ $('.link_section').click(function(){
     $('.gumb').trigger('click')
     // $('gumb').removeClass('active')
 })
+
+$(window).on('load', function() {
+    wow = new WOW(
+    {
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       10,          // default
+    }
+    )
+    wow.init();
+});

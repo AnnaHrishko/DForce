@@ -72,6 +72,10 @@ scroll-behavior: smooth;
 	padding: 0 30px;
 }
 
+header.bcg-white{
+	background-color: #fff;
+}
+
 .header-wrap{
 	header{
 		background-color: #fff;
@@ -91,6 +95,14 @@ header.fixed{
 		&__logo{
 			width: 138px;
 			height: 38px;
+		}
+	}
+}
+
+.english-version{
+	.header-inner__right-part{
+		.languages-menu{
+			margin-right: 35px;
 		}
 	}
 }
@@ -172,14 +184,14 @@ header.fixed{
 
 .languages-menu{
 	padding-left: 0;
-	display: none;
+	display: block;
 	li{
 		list-style: none;
 		&.current-language{
 			position: relative;
 			&:hover{
 				.sub-menu{
-					display: none;
+					display: block;
 				}
 			}
 		}
@@ -233,9 +245,6 @@ header.fixed{
 	}
 	&--white{
 		background-color: #fff;
-		&:hover{
-			background-image: linear-gradient(to left, #490281, #fff, #490281, #fff );
-		}
 		span{
 			color: #101828;
 		}
@@ -606,11 +615,38 @@ body.bcg-color{
 }
 
 .sucsess_popup {
-    position: absolute;
-    bottom: -20px;
-    color: #fff;
-    font-size: 11px;
     display: none;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+	border-radius: 20px;
+	padding: 46px 44px 49px;
+	position: relative;
+	.close-popup{
+		position: absolute;
+		top: 21px;
+		right: 22px;
+		cursor: pointer;
+	}
+    .thank-you-wrap{
+    	display: flex;
+    	align-items: center;
+    	margin-bottom: 12px;
+    	img{
+    		width: 48px;
+    		height: 48px;
+    		display: block;
+    		margin-right: 12px;
+    	}
+    	h3{
+    		font-weight: 400;
+			font-size: 34px;
+			line-height: 145%;
+			letter-spacing: -0.02em;
+			color: #F2F2F2;
+    	}
+    }
+    .text-description{
+    	color: #F2F2F2;
+    }
 }
 
 .swiper-slide{

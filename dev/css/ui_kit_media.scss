@@ -262,6 +262,23 @@ body{
 
 @media (max-width: 768px){
 
+.sucsess_popup {
+	.close-popup{
+		top: 12px;
+		right: 12px;
+	}
+    .thank-you-wrap{
+    	img{
+    		width: 40px;
+    		height: 40px;
+    		margin-right: 10px;
+    	}
+    	h3{
+				font-size: 26px;
+    	}
+    }
+}
+
 .form-footer {
 	&__right{
 		.info-wrap{
