@@ -91,20 +91,9 @@ $(function() {
       }
     });
 
-$('body').on('click touchstart', function () {
-const videoElement = document.querySelectorAll('video');
-if (videoElement.playing) {
-// video is already playing so do nothing
-}
-else {
-// video is not playing
-// so play video now
-videoElement.play();
-}
-});
 
 // $(window).resize(function() {
-  // if ($(window).width() > 768) {
+  if ($(window).width() > 768) {
      const backgroundVideo = new BackgroundVideo('.bv-video', {
       src: [
         '../video/Gradientsoftbodies.mp4',
@@ -116,7 +105,7 @@ videoElement.play();
         autoplayFallback: true;
       },
     });
-  // }
+  }
 // });
 
 
@@ -279,3 +268,59 @@ $(window).on('load', function() {
     wow.init();
 });
 
+
+  //   function func() {
+  //   console.log('я делаю редирект');
+  //   document.location.href = 'http://stackoverflow.com'
+  // }
+
+$( document ).ready(function(){
+        const visited = window.localStorage.getItem('visited') !== null;
+        // let userLanguage = localStorage.getItem('userLanguage');
+        let langBrowser = navigator.language || navigator.userLanguage; 
+        if (!visited && langBrowser == 'en') {
+            // localStorage.setItem('userLanguage', userLanguage);
+            window.location.href = '/en';
+        } else if (langBrowser !== 'en' && document.querySelector('meta[name="description"]').content === 'Веб-студія DForce в Україні | SEO, Розробка, Дизайн') {
+            window.localStorage.setItem('visited', true)
+            window.location.href = '/index.html';
+        }
+});
+
+// window.location.href = '/en' + userLanguage;
+
+// $( document ).ready(function(){
+//     var userLanguage = navigator.language || navigator.userLanguage;
+//     if (userLanguage.startsWith('en')) {
+//         window.location.href = '/en';
+//     } else {
+//         window.location.href = '/index.html';
+//     }
+// }
+
+
+// Perform the redirection
+
+
+
+
+
+// if (userLang === 'en' && $("html").attr("lang") === 'uk') {
+//             window.location.href = "/en"
+//         } else if (userLang === 'uk' && $("html").attr("lang") === 'en') {
+//             window.location.href = "/index.html"
+//         } else{
+//             window.location.href = "/index.html"
+//         }
+
+
+
+
+
+
+
+ window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7JJ5MK64C8');
