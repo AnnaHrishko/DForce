@@ -278,6 +278,7 @@ $( document ).ready(function(){
         const visited = window.localStorage.getItem('visited') !== null;
         // let userLanguage = localStorage.getItem('userLanguage');
         let langBrowser = navigator.language || navigator.userLanguage; 
+        // alert(langBrowser)
         if (!visited && langBrowser == 'en') {
             // localStorage.setItem('userLanguage', userLanguage);
             window.location.href = '/en';
@@ -292,9 +293,9 @@ $( document ).ready(function(){
 // $( document ).ready(function(){
 //     var userLanguage = navigator.language || navigator.userLanguage;
 //     if (userLanguage.startsWith('en')) {
-//         window.location.href = '/en';
+//         window.location.href = 'https://dforce.com.ua//en';
 //     } else {
-//         window.location.href = '/index.html';
+//         window.location.href = 'https://dforce.com.ua//index.html';
 //     }
 // }
 
